@@ -14,7 +14,7 @@
 
 (defun sum-masks (nums mask)
 	(sum-array (mapcar
-		(curry1 logand mask)
+		(curry1 #'logand mask)
 		nums)))
 
 (defun do-i-set-the-mask-or-not (nums mask)
