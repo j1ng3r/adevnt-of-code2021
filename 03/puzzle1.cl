@@ -2,7 +2,7 @@
 	(let ((line (read-line fd nil)))
 		(and line (append (list line) (read-lines fd)))))
 
-(defconstant file (open "./input.txt" :if-does-not-exist nil))
+(defconstant file (open "./input.txt"))
 (defconstant rawlines (read-lines file))
 (defconstant numlines (length rawlines))
 (defconstant linelength (length (car rawlines)))
